@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Cheat Sheet</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+
+<body id='home'>
+  <div class='row fixed-top float-right'>
+    <div class='col-md-9'></div>
+    <div class='col-md-3 float-right'>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class='list-unstyled components'>
+      <li class='active'><a href='#0'>Home</a></li>
+      <li><a href='#1'>Typography</a></li>
+      <li><a href='#2'>Alignment + Transformation</a></li>
+      <li><a href='#3'>Quick/Clear float</a></li>
+      <li><a href='#4'>Blockquote</a></li>
+      <li><a href='#5'>Lists</a></li>
+      <li><a href='#6'>Code</a></li>
+      <li><a href='#7'>Contextual Colors</a></li>
+      <li><a href='#8'>Buttons</a></li>
+      <li><a href='#9'>Forms</a></li>
+      <li><a href='#10'>Inline Form</a></li>
+      <li><a href='#11'>Tables</a></li>
+      <li><a href='#12'>List Group</a></li>
+      <li><a href='#13'>Cards</a></li>
+      <li><a href='#14'>Wells</a></li>
+      <li><a href='#15'>Alerts</a></li>
+      <li><a href='#16'>Dismissable Alert</a></li>
+      <li><a href='#17'>Progress Bar</a></li>
+      <li><a href='#18'>Badges</a></li>
+      <li><a href='#19'>Images</a></li>
+      <li><a href='#20'>Grids</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+  <div class='container'>
+    <!-- NOTE: page-header is deprecated! -->
+    <h1 class="page-header" id='0'>h1.page-header <small>small</small></h1>
+
+    <h2 id='1'>TYPOGRAPHY</h2>
+    <!-- lead: slightly enlarge font to emphasize text -->
+    <p class='lead'>lead class</p>
+    <p><mark>mark</mark></p>
+    <p><del>del</del></p>
+
+    <hr>
+
+    <h2 id='2'>ALIGNMENT + TRANSFORMATION</h2>
+    <p class='text-left'>p.text-left</p>
+    <p class='text-right'>p.text-right</p>
+    <p class='text-center'>p.text-center</p>
+    <p class='text-justify'>p.text-justify (even gap when reaching end of line)</p>
+    <p class='text-nowrap'>p.text-nowrap</p>
+    <p class='text-center text-lowercase'>p.text-lowercase THIS IS WRITTEN IN ALL CAPS</p>
+    <p class='text-center text-capitalize'>p.text-capitalize this was all in lowercase</p>
+
+    <h2 id='3'>QUICK FLOAT + CLEAR FLOAT</h2>
+    <div class='float-right'>div.float-right</div>
+    <div class='float-left'>div.float-left</div>
+
+    <!-- clearfix fixes overlapping html elements -->
+    <div class='clearfix'></div>
+
+    <hr>
+
+    <h2 id='4'>BLOCKQUOTE</h2>
+    <blockquote class='blockquote'>
+      <p>blockquote.blockquote p</p>
+      <footer class='blockquote-footer'>blockquote.blockquote footer.blockquote</footer>
+    </blockquote>
+
+    <hr>
+
+    <h2 id='5'>LISTS</h2>
+    <ul>
+      <li>ul One</li>
+      <li>ul Two</li>
+      <li>ul Three</li>
+      <li>ul Four</li>
+      <li>ul Five</li>
+    </ul>
+
+    <ul class="list-unstyled">
+      <li>ul.list-unstyled>li*5 One</li>
+      <li>ul.list-unstyled>li*5 Two</li>
+      <li>ul.list-unstyled>li*5 Three</li>
+      <li>ul.list-unstyled>li*5 Four</li>
+      <li>ul.list-unstyled>li*5 Five</li>
+    </ul>
+
+    <ul class='list-inline'>
+      <li class='list-inline-item'>ul.list-inline>li.list-inline-item*5 One</li>
+      <li class='list-inline-item'>ul.list-inline>li.list-inline-item*5 Two</li>
+      <li class='list-inline-item'>ul.list-inline>li.list-inline-item*5 Three</li>
+      <li class='list-inline-item'>ul.list-inline>li.list-inline-item*5 Four</li>
+      <li class='list-inline-item'>ul.list-inline>li.list-inline-item*5 Five</li>
+    </ul>
+
+
+    <h2 id='6'>CODE</h2>
+    <code>&lt;h1&gt;Heading Text&lt;/h1&gt;</code>
+    <br> Change directory with <kbd>cd</kbd>
+    <br> To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+
+    <hr>
+
+    <h2 id='7'>CONTEXTUAL COLORS</h2>
+    <p class='text-primary'>p.text-primary</p>
+    <p class='text-success'>p.text-success</p>
+    <p class='text-info'>p.text-info</p>
+    <p class='text-warning'>p.text-warning</p>
+    <p class='text-danger'>p.text-danger</p>
+    <p class='text-muted'>p.text-muted</p>
+
+
+    <p class='bg-primary'>p.bg-primary</p>
+    <p class='bg-success'>p.bg-success</p>
+    <p class='bg-info'>p.bg-info</p>
+    <p class='bg-warning'>p.bg-warning</p>
+    <p class='bg-danger'>p.bg-danger</p>
+    <p class='bg-muted'>p.bg-muted</p>
+  </div>
+
+  <div class='container'>
+
+    <h2 id='8'>BUTTONS</h2>
+
+    <button class='btn btn-default'>btn.btn-default</button>
+    <a href='#' class='btn btn-default' role="button">a.btn.btn-default # role='button'</a>
+    <input type='submit' value='Submit' class='btn btn-default' />
+
+    <br>
+
+    <button class='btn btn-default'>btn.btn-default</button>
+    <button class='btn btn-primary'>btn.btn-primary</button>
+    <button class='btn btn-success'>btn.btn-success</button>
+    <button class='btn btn-info'>btn.btn-info</button>
+    <button class='btn btn-warning'>btn.btn-warning</button>
+    <button class='btn btn-danger'>btn.btn-danger</button>
+    <button class='btn btn-muted'>btn.btn-muted</button>
+    <button class='btn btn-link'>btn.btn-link</button>
+
+    <br>
+
+    <button class='btn btn-default btn-lg'>btn.btn-default.btn-lg</button>
+    <button class='btn btn-default btn-sm'>btn.btn.btn-default.btn-sm</button>
+    <button class='btn btn-default btn-xm'>btn.btn.btn-default.btn-xm</button>
+    <button class='btn btn-default' disabled="disabled">btn.btn-default disabled='disabled'</button>
+
+  </div>
+
+  <div class='container'>
+    <h2 id='9'>FORMS</h2>
+
+    <form>
+
+      <div class='form-group'>
+        <label>Name</label>
+        <input type='text' class='form-control' placeholder='Add Name' />
+      </div>
+
+      <div class='form-group'>
+        <label>Email</label>
+        <input type='email' class='form-control' placeholder='Add Email' />
+      </div>
+
+      <div class='form-group'>
+        <label>Message</label>
+        <textarea class='form-control' placeholder='Add Message'></textarea>
+      </div>
+
+      <div class='form-group'>
+        <label>Sender</label>
+        <select class='form-control'>
+          <option value='male'>Male</option>
+          <option value='female'>Female</option>
+          <option value='other'>Other</option>
+        </select>
+      </div>
+
+      <div class='form-group'>
+        <label>Upload File</label>
+        <input type='file'>
+        <p class='help-block'>only png and jpg allowed</p>
+      </div>
+
+      <div class='checkbox'>
+        <label>
+          <input type='checkbox'> Check me out
+        </label>
+      </div>
+
+      <button type='submit' class='btn btn-default'>Submit</button>
+    </form>
+
+    <h2 id='10'>INLINE FORM</h2>
+    <form class='form-inline'>
+      <div class='form-group'>
+        <label>Email</label>
+        <input type='email' class='form-control' placeholder='Email' />
+
+        <div class='form-group'>
+          <label>Password</label>
+          <input type='password' class='form-control' placeholder='Password' />
+        </div>
+
+        <div class='checkbox'>
+          <label>
+          <input type='checkbox'>Remember me
+        </label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <hr>
+
+  <div class='container'>
+    <h2 id='11'>TABLES</h2>
+    <!-- NOTE: table-condensed is deprecated -->
+    <p>table.table.table-striped.table-bordered.table-hover</p>
+    <p>table>tr*5>tr*3</p>
+
+    <table class='table table-striped table-bordered table-hover table-condensed'>
+      <tr>
+        <td>Firstname</td>
+        <td>Lastname</td>
+        <td>Age</td>
+      </tr>
+      <tr class='table-danger'>
+        <td>table-danger</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>24</td>
+      </tr>
+      <tr class='table-success'>
+        <td>table-success</td>
+        <td>Doe</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>Stephanie</td>
+        <td>Landon</td>
+        <td>47</td>
+      </tr>
+    </table>
+  </div>
+
+  <hr>
+
+  <div class='container'>
+    <h2 id='12'>LIST GROUP</h2>
+    <p>ul.list-group.li.list-group-item{Item $}*4</p>
+    <ul class='list-group'>
+      <li class='list-group-item'>Item 1</li>
+      <li class='list-group-item'>Item 2</li>
+      <li class='list-group-item'>Item 3</li>
+      <li class='list-group-item'>Item 4</li>
+    </ul>
+
+    <p>div.list-group>a[href=#].list-group-item{Item $}*4</p>
+    <div class='list-group'>
+      <a href='#' class='list-group-item'>Item 1</a>
+      <a href='#' class='list-group-item active'>Item 2</a>
+      <a href='#' class='list-group-item list-group-item-success'>Item 3</a>
+      <a href='#' class='list-group-item disabled'>Item 4</a>
+    </div>
+  </div>
+
+  <div class='container'>
+    <h2 id='13'>CARDS</h2>
+    <p>div.card div.card-img-top card.card-body ...</p>
+    <div class="card" style="width: 20rem;">
+      <div class='card-header card-primary'>div.card-header.card-primary</div>
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2 id='14'>WELLS</h2>
+    <p>Wells are deprecated as of Bootstrap 4 (replaced by cards).</p>
+    p{card-lg and card-sm do not exist}
+    <div class='card'>div.card</div>
+    <div class='card card-lg'>div.card</div>
+    <div class='card card-sm'>div.card</div>
+
+    <h2 id='15'>ALERTS</h2>
+    <div class='alert' role='alert'>div.alert</div>
+    <div class='alert alert-success' role='alert'>div.alert.alert-success</div>
+    <div class='alert alert-info' role='alert'>div.alert.alert-info</div>
+    <div class='alert alert-warning' role='alert'>div.alert.alert-warning</div>
+    <div class='alert alert-danger' role='alert'>div.alert.alert-danger</div>
+
+    <h2 id='16'>DISMISSABLE ALERT</h2>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      div.alert.alert-warning.alert-dissmissible.fade.show[role=alert] btn[type=button data-dismiss=alert aria-label=Close].close span[aria-hidden=true]{&times;}
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <h2 id='17'>PROGRESS BAR</h2>
+    <div class='progress'>
+      <div class='progress-bar' style='width:50%'>50%</div>
+    </div>
+    <div class='progress'>
+      <div class='progress-bar progress-bar-success progress-bar-striped' style='width:50%'>50%</div>
+    </div>
+    <div class='progress'>
+      <div class='progress-bar bg-info progress-bar-striped' style='width:50%'>50%</div>
+    </div>
+    <p>div.progress>div.progress-bar.bg-danger.progress-bar-striped.progress-bar-animated[style=width50%]{50%}</p>
+    <div class='progress'>
+      <div class='progress-bar bg-danger progress-bar-striped progress-bar-animated' style='width:50%'>50%</div>
+    </div>
+
+    <h2 id='18'>BADGES</h2>
+    <span class="badge badge-primary">span.badge.badge-primary</span>
+    <span class="badge badge-secondary">span.badge.badge-secondary</span>
+    <span class="badge badge-success">span.badge.badge-success</span>
+    <span class="badge badge-danger badge-pill">span.badge.badge-danger.badge-pill</span>
+    <span class="badge badge-warning">span.badge.badge-warning</span>
+    <span class="badge badge-info">span.badge.badge-info</span>
+    <span class="badge badge-light">span.badge.badge-light</span>
+    <span class="badge badge-dark badge-pill">span.badge.badge-dark.badge-pill</span>
+
+    <button class='btn btn-primary'>btn.btn.btn-primary span.badge.badge-light{text} <span class='badge badge-light'>37</span></button>
+  </div>
+
+  <div class='container'>
+    <h2 id='19'>IMAGES</h2>
+    <p>img.img-thumbnail</p>
+    <img class='img-thumbnail' src='https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150' />
+    <p>rounded</p>
+    <img class='rounded' src='https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150' />
+    <p>rounded-circle</p>
+    <img class='rounded-circle' src='https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150' />
+  </div>
+
+  <div class='container'>
+    <h2 id='20'>GRIDS</h2>
+    <p>div.row>div.col-md-8{content}+div.col-md-4{content}</p>
+    <div class='row'>
+      <div class='col-md-8'>
+        <p class='alert-success'>div.col-md-8</p>
+      </div>
+      <div class='col-md-4'>
+        <p class='alert-success'>div.col-md-4</p>
+      </div>
+    </div>
+
+    <p>div.row>div.col-md-6.col-xs-6{content}*2</p>
+    <p>** keep 2 columns even after shrinking **</p>
+    <div class='row'>
+      <div class='col-md-6 col-cs-6'>
+        <p class='alert-success'>div.col-md-6.col-xs-6</p>
+      </div>
+      <div class='col-md-6 col-xs-6'>
+        <p class='alert-success'>div.col-md-6.col-xs-6</p>
+      </div>
+    </div>
+
+    <p>div.row>div.col-md-3{content}*4</p>
+    <div class='row'>
+      <div class='col-md-3'>
+        <p class='alert-primary'>div.col-md-3</p>
+      </div>
+      <div class='col-md-3'>
+        <p class='alert-primary'>div.col-md-3</p>
+      </div>
+      <div class='col-md-3'>
+        <p class='alert-primary'>div.col-md-3</p>
+      </div>
+      <div class='col-md-3'>
+        <p class='alert-primary'>div.col-md-3</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div style='height:400px'></div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>
